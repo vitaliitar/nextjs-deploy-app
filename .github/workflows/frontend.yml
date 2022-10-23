@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install deps
-        run: npm run install
+        run: npm install
       - name: Check codebase
         working-directory: .
         run: npm run build
